@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
-const questions = ["What was your motivation?", "Why did you build this project?", "What problem does it solve?", "What did you learn?", "What makes your project stand out?"];
+
 const questions = [
   {
     id: 1,
@@ -35,10 +35,33 @@ const questions = [
   }
 ];
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  const fs = require("fs");
+  fs.writeFile("README.md", "", (err) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const readme = `# ${name}`;
+    readme += "\n\n" + description;
+    readme += "\n\n## Author";
+    readme += "\n" + author;
+
+    fs.writeFile("README.md", readme, (err) => {
+      if (err) {
+        console.error(err);
+        return;
+      }
+      console.log("README file created successfully!");
+    });
+  });
+}
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  const readme
+}
 
 // Function call to initialize app
 init();
