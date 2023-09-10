@@ -1,0 +1,19 @@
+{
+  "name": "packagemodule9",
+  "version": "1.0.0",
+  "description": "Module9 Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marksantander/Module9.git"
+  },
+  "author": "Mark Santander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marksantander/Module9/issues"
+  },
+  "homepage": "https://github.com/marksantander/Module9#readme"
+}
